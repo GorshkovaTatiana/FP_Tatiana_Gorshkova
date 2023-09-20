@@ -1,0 +1,83 @@
+.content {
+  padding-left: 280px;
+}
+
+div#trend {
+  position: relative;
+  width: 255px;
+  height: 301px;
+  float: left;
+  margin: 0 20px 20px 0;
+  text-align: center;
+}
+
+#trend .like_button {
+  position: absolute;
+  top: 5px;
+  left: 200px;
+}
+
+.trend {
+  position: relative;
+  background: url(/assets/Rectangle218.png);
+  background-repeat: no-repeat;
+  top: 76%;
+  width: 255px;
+  height: 70px;
+  text-align: center;
+  border-radius: 10px;
+  border-width: 1px;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 0 0 7px #666;
+}
+
+.trend_img {
+  width: 255px;
+  height: 301px;
+  float: left;
+  margin: 0 20px 20px 0;
+  text-align: center;
+  border-radius: 10px;
+  border-width: 1px;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 0 0 7px #666;
+}
+
+.trend span {
+  font-family: century-gothic;
+  font-size: 20px;
+  position: absolute;
+  top: 0px;
+  left: 70px;
+}
+
+div#watching {
+  width: 348px;
+  height: 209px;
+  float: left;
+  margin: 0 20px 20px 0;
+  text-align: center;
+  position: relative;
+
+}
+
+#watching .watching_img {
+  border-radius: 10px;
+  border-width: 2px;
+  border: 3px solid rgb(255, 255, 255);
+  box-shadow: 0 0 8px #666;
+}
+
+#watching .like_button {
+  position: absolute;
+  top: 5px;
+  left: 293px;
+}
+
+#watching .watch_button {
+  position: absolute;
+  top: 150px;
+  left: 290px;
+  width: 50px;
+  height: 50px;
+}
