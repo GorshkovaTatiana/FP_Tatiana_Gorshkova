@@ -1,4 +1,8 @@
+@import url("sidebar.css");
 header {
+  display: grid;
+  grid-template-rows: 20% 70% 10%;
+  grid-template-columns: repeat(3, 1fr);
   font-family: century-gothic;
   padding-left: 280px;
   top: 0;
@@ -8,10 +12,14 @@ header {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  grid-template-areas:
+  "A A A A   A A A A   A A C C"
+  "B B B B   B B B B   B B B B"
+  "B B B B   B B B B   B B B B";
 }
 
 .header {
-  width: 50vw;
+  grid-area: A;
   float: left;
 }
 
@@ -24,9 +32,7 @@ header {
 }
 
 .movie_header {
-  position: relative;
-  top: 5vh;
-  float: left;
+  grid-area: B;
 }
 
 .movie_header img{
@@ -34,33 +40,31 @@ header {
 }
 
 .movie_header h1 {
-  color: #fff;
+  color: var(--main-text-color);
   text-decoration: none;
   font-size: 40px;
   margin-right: 20px;
 }
 
 .movie_header p {
-  color: #fff;
+  color: var(--main-text-color);
   text-decoration: none;
   font-size: 24px;
   margin-right: 20px;
 }
 
 .header_right {
-  float: right;
-  position: relative;
-  width: 20vw;
+  grid-area: C;
 }
 
 .header_right span {
-  color: #fff;
+  color: var(--main-text-color);
   text-decoration: none;
   font-size: 20px;
 }
 
 .header_right a {
-  color: #fff;
+  color: var(--main-text-color);
   text-decoration: none;
   font-size: 16px;
   margin-right: 20px;

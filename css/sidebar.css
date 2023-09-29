@@ -1,7 +1,12 @@
+:root {
+  --main-background-color: #21201E;
+  --main-selection-color: #7d30b079;
+  --main-text-color: #fff;
+}
 body {
   width: 100%;
   min-height: 100vh;
-  background-color: #21201E;
+  background-color: var(--main-background-color);
   font-family: century-gothic;
   font-weight: 400;
   font-style: normal;
@@ -23,8 +28,8 @@ ul {
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #21201E;
-  box-shadow: 4px 4px 8px 0 #7d30b079;
+  background-color: var(--main-background-color);
+  box-shadow: 4px 4px 8px 0 var(--main-selection-color);
 }
 
 .logo {
@@ -57,7 +62,7 @@ ul {
 
 .link>span {
   font-size: 16px;
-  color: #fff;
+  color: var(--main-text-color);
 }
 
 .link:hover {
@@ -77,5 +82,5 @@ ul {
   top: 0;
   width: 5px;
   height: 100%;
-  background-color: #fff;
+  background-color: var(--main-text-color);
 }
