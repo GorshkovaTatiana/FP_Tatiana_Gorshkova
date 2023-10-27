@@ -43,7 +43,9 @@ for(var i =0;i<operator.length;i++){
               output= output==""?output:reverseNumberFormat(output);
               if(this.id=="="){
                 if(history.substr(history.length-1,history.length)=="^"){
-                  var result=Math.pow(history.substr(0,history.length-1), output);
+                  var pow = getPow(history.substr(0,history.length-1));
+                  var result = pow(output);
+                  //var result=Math.pow(history.substr(0,history.length-1), output);
                   printOutput(result);
                   printHistory("");
                 }
@@ -79,4 +81,10 @@ for(var i =0;i<number.length;i++){
           printOutput(output);
       }
   });
+}
+
+function getPow(x) {
+  return function (y) {
+    return Math.pow(x, y);
+  };
 }
