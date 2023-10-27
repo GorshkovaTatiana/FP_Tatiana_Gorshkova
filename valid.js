@@ -39,11 +39,11 @@ OK.onclick = function() {
     if(object.surname=="") {
         wrong+="Фамилия,";
     }
-    var phoneReg = /^[+][0-9]{1}[ ][(][0-9]{3}[)][ ][0-9]{2}[-][0-9]{2}[-][0-9]{3}$/;
+    let phoneReg = /^[+][0-9]{1}[ ][(][0-9]{3}[)][ ][0-9]{2}[-][0-9]{2}[-][0-9]{3}$/;
     if(!phoneReg.test(object.phone) && object.phone!="") {
         wrong+="Телефон,";
     }
-    var mailReg =  /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
+    let mailReg =  /^(([^<>()[\].,;:\s@"]+(\.[^<>()[\].,;:\s@"]+)*)|(".+"))@(([^<>()[\].,;:\s@"]+\.)+[^<>()[\].,;:\s@"]{2,})$/iu;
     if(!mailReg.test(object.email) || object.email==null) {
         wrong+="Почта,";
     }
@@ -66,7 +66,7 @@ OK.onclick = function() {
   };
   function get_cookie ( cookie_name )
   {
-    var results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
+    let results = document.cookie.match ( '(^|;) ?' + cookie_name + '=([^;]*)(;|$)' );
    
     if ( results )
       return ( unescape ( results[2] ) );
