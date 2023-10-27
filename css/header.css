@@ -1,0 +1,75 @@
+@import url("sidebar.css");
+header {
+  display: grid;
+  grid-template-rows: 20% 73% 7%;
+  grid-template-columns: repeat(3, 1fr);
+  font-family: century-gothic;
+  padding-left: 280px;
+  top: 0;
+  height: 40vh;
+  vertical-align: top;
+  background: url(/assets/header1.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-template-areas:
+  "A A A A   A A A A   A A C C"
+  "B B B B   B B B B   B B B B"
+  "B B B B   B B B B   B B B B";
+}
+
+.header {
+  grid-area: A;
+  float: left;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  margin-right: 20px;
+  bottom: 0;
+}
+
+.movie_header {
+  grid-area: B;
+}
+
+.movie_header img{
+  padding-right: 10px;
+}
+
+.movie_header h1 {
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-size: 40px;
+  margin-right: 20px;
+}
+
+.movie_header p {
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-size: 24px;
+  margin-right: 20px;
+}
+
+.header_right {
+  grid-area: C;
+}
+
+.header_right span {
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.header_right a {
+  color: var(--main-text-color);
+  text-decoration: none;
+  font-size: 16px;
+  margin-right: 20px;
+}
+
+.header_right a:last-child {
+  margin-right: 0;
+}
